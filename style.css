@@ -48,6 +48,9 @@ nav ul li{
 nav ul li a{
   text-decoration: none;
   transition: 0.5s;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 nav ul li a:hover{
   color: #f9004d;
@@ -144,17 +147,69 @@ section {
 }
 .content-about {
   width: 50%;
-  padding-top: 10%;
+  padding: 3% 3% 3% 3%;
+  margin-top: 7%;
+  background-color: #0000006c;
+  border-radius: 20px;
+  border-width: 1px;
+  border-color: #0000002d;
 }
 .mb-4 {
   margin-bottom: 1rem;
   font-weight: 600;
-  color: #c1c4ca;
+  color: #b0b1b3;
 }
 .mb-4 a {
   text-decoration: none;
 }
 .exp-col-txt {
   font-weight: 600;
-  color: #c1c4ca;
+  color: #c1c4ca69;
+}
+.col-1-span-1 {
+  grid-column: span 2/span 2;
+}
+.col-2-span-1 {
+  grid-column: span 6/span 6;
+}
+.exp-title {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.exp-col-1 {
+  flex: 2;
+}
+.exp-col-2 {
+  flex: .5;
+}
+.exp-main-container {
+  display: flex;
+  background-color: #0000002d;
+  padding: 3% 3% 3% 3%;
+  width: 80%;
+}
+h1, h2, h3, h4, h5 {
+  margin-bottom: .5rem;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+  display: flex;
+  list-style: none;
+}
+.float-ovals {
+  color: #918868;
+  background-color: #91886862;
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+  margin-right: 0.375rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  font-size: .75rem;
+}
+.exp-main-container:hover {
+  border-color: #fff;
+  border-width: 1px;
+  background-color: #91886828;
+  border-radius: 20px;
 }
