@@ -1,17 +1,12 @@
-function toggleMenu() {
-    var menu = document.querySelector('.menu');
-    menu.classList.toggle('active');
-  }
-// Smooth scrolling for navigation links
-$('nav a').on('click', function(event) {
-  if (this.hash !== '') {
+$(document).ready(function() {
+  // Smooth scrolling for navigation links
+  $('a[href^="#"]').on('click', function(event) {
     event.preventDefault();
-    var hash = this.hash;
-    $('html, body').animate(
-      {
-        scrollTop: $(hash).offset().top
-      },
-      800
-    );
-  }
+    var target = $(this.getAttribute('href'));
+    if (target.length) {
+      $('html, body').stop().animate({
+        scrollTop: target.offset().top
+      }, 1000);
+    }
+  });
 });
