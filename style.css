@@ -33,6 +33,9 @@ body{
   background-position: right;
   background-size: cover;
 }
+.right-side::-webkit-scrollbar {
+    display: none;
+}
 .split-col {
   gap: 1rem;
 }
