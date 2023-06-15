@@ -329,7 +329,7 @@ h1, h2, h3, h4, h5 {
     border-radius: 20px;
   }
   .container-rqg {
-    margin-top: 50px;
+    margin-top: 0;
     padding: 20px;
     border-color: #fff;
     border-width: 1px;
@@ -439,7 +439,7 @@ h1, h2, h3, h4, h5 {
     border-radius: 20px;
   }
   .container-rqg {
-    margin-top: 50px;
+    margin-top: 0;
     padding: 20px;
     border-color: #fff;
     border-width: 1px;
