@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-database.js"></script>
-
 <head>
   <!---api--->
   <meta charset="UTF-8">
@@ -33,7 +30,7 @@
             <p>Hardcode? Wordpress? Webflow? I make beautiful and functionable websites.</p>
           </div>
           <div class="link">
-            <a href="#about" class="hire">Let's Get Started</a>
+            <a href="#" class="hire">Let's Get Started</a>
           </div>
         </section>
       </div>
@@ -85,16 +82,24 @@
         </section>
         <section id="projects">
           <div class="container-projects">
-            <div id="chat-container">
-              <div id="chat-messages">Your Chats</div>
-              <form id="chat-form">
-                <input type="text" id="message-input" placeholder="Type your message...">
-                <button type="submit">Send</button>
-              </form>
+            <div class="container-rqg">
+              <h3 class="rqg-h3">Random Tropa Best Quote Generator</h3>
+              <div id="quote" class="quote"></div>
+              <button class="rqg-btn" onclick="generateQuote()">Generate Quote</button>
             </div>
+            <button class="floating-btn" href="#about">
+              Get in Touch
+            </button>
           </div>
         </section>
+        <button class="floating-btn">
+          Get in Touch
+        </button>
       </div>
-  <script type="module" src="script.js"></script>
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.0/scrollreveal.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/isotope/3.0.6/isotope.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 </body>
 </html>
