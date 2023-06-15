@@ -393,6 +393,7 @@ h1, h2, h3, h4, h5 {
     width: 100%;
     padding: 20px;
     padding: 0 20px 20px 20px;
+    height: 100%;
   }
 
 }
@@ -481,6 +482,7 @@ h1, h2, h3, h4, h5 {
     width: 100%;
     padding: 20px;
     padding: 0 20px 20px 20px;
+    height: 100%;
   }
 
   .exp-title {
