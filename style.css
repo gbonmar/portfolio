@@ -296,9 +296,22 @@ h1, h2, h3, h4, h5 {
     overflow-x: hidden;
     overflow-y: scroll;
   }
-
+  nav {
+    padding: 20px 0;
+  }
+  .li-item {
+    margin-right: 0.375rem
+  }
+  .nav-items {
+    display: flex;
+    margin-left: 0;
+    justify-content: space-around;
+  }
+  .logo {
+    text-align: center;
+  }
   .split-col {
-    padding: 20px;
+    padding: 20px 20px 0;
   }
   section {
     padding: 0;
@@ -338,6 +351,7 @@ h1, h2, h3, h4, h5 {
   .container-about {
     padding-top: 10px;
     padding-right: 0;
+    height: 100%;
   }
 
   .content-about {
@@ -408,9 +422,22 @@ h1, h2, h3, h4, h5 {
     overflow-y: scroll;
   }
   .split-col {
-    padding: 20px;
+    padding: 20px 20px 0;
   }
-
+  nav {
+    padding: 20px 0;
+  }
+  .li-item {
+    margin-right: 0.375rem
+  }
+  .nav-items {
+    display: flex;
+    margin-left: 0;
+    justify-content: space-around;
+  }
+  .logo {
+    text-align: center;
+  }
   .left-side {
     flex: none;
     padding: 20px;
@@ -446,6 +473,7 @@ h1, h2, h3, h4, h5 {
   .container-about {
     padding-top: 10px;
     padding-right: 0;
+    height: 100%;
   }
 
   .content-about {
