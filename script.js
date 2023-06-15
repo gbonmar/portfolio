@@ -7,6 +7,20 @@ var quotes = [
   "Awit sayo par. -Nathaniel Bilo",
   "Cobra tayo par. -Nikko Prudente",
   "Tara nomi. -Jc Vasquez",
+  "Nayy. -Julius Canares",
+  "Tae muna ko par. -John Harold Pineda",
+  "Bobo mo julay. -Bonmar Guilleno",
+  "Bobo mo naman Bonmar. -Julius Canares",
+  "Luto tayo par, foodtrip, ayaw nyo? Di wag. John Harold Pineda",
+  "Inom nanaman lakas nyo talaga mag inom. -Nathaniel Bilo",
+  "ML. -John Clark Pineda",
+  "Oo nga bobo mo clark. -Julius Canares",
+  "AMBOBO AMPOTA. -Bonmar Guilleno",
+  "Ibang bata nga walang makain eh. -Bonmar Guilleno",
+  "Bakit pag inubos ko ba to mabubusog yung mga bata? -Julius Canares",
+  "Hayaan mo sila par, basta tayo di cheater. -John Harold Pineda",
+  "Grind muna ko par. Pabili cobra -Nikko Prudente",
+  "TFT is life. -Nikko Prudente"
 ];
 
 function generateQuote() {
