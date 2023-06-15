@@ -158,10 +158,6 @@ nav{
   align-items: center;
   justify-content: space-between;
 }
-.logo a{
-  font-size: 40px;
-  text-decoration: none;
-}
 span{
   color: #f9004d;
 }
@@ -201,8 +197,8 @@ a{
   color: #fff;
 }
 .my-logo {
-    height: 30px;
-    margin-bottom: -5px;
+  height: 30px;
+  margin-bottom: -5px;
 }
 .mb-4 {
   margin-bottom: 1rem;
@@ -268,10 +264,26 @@ h1, h2, h3, h4, h5 {
 /* Media queries for 1367 below screen */
 @media only screen and (max-width: 1366px) {
   .nav-items {
-    text-align: center;
+    text-align: left;
+    margin-left: -10px;
   }
   nav {
     display: block;
+    padding: 20px 50px 50px 50px;
+  }
+  .my-logo {
+    height: 60px;
+    margin-bottom: -5px;
+    margin-left: -10px;
+  }
+  .content h2{
+    font-size: 30px;
+  }
+  .content-about {
+    width: 65%;
+  }
+  .logo {
+    text-align: left;
   }
 }
 
