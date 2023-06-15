@@ -252,3 +252,156 @@ h1, h2, h3, h4, h5 {
 	outline: none;
 }
 /*end*/
+
+/*RESPONSIVE*/
+
+/* Media queries for mobile devices */
+@media only screen and (max-width: 600px) {
+
+  .container{
+    flex-direction: column;
+    padding: 5% 2%;
+  }
+
+  .left-side, .right-side {
+    flex: none;
+    padding: 20px;
+  }
+
+  .right-side {
+    background-image: none;
+  }
+
+  .content h2{
+    font-size: 36px;
+  }
+
+  .content p{
+    font-size: 14px;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .link .hire{
+    font-size: 12px;
+    padding: 8px 20px;
+  }
+
+  .container-about {
+    padding-top: 10px;
+    padding-right: 0;
+  }
+
+  .content-about {
+    width: 100%;
+    padding: 2% 2% 5% 2%;
+  }
+
+  .container-experiences {
+    padding: 20px;
+  }
+
+  .exp-main-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .exp-title {
+    margin-bottom: 10px;
+  }
+
+  .floating-btn {
+    font-size: 14px;
+    padding: 10px 16px;
+    bottom: 10px;
+    right: 10px;
+  }
+  body{
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+}
+
+/* Media queries for tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+  .container{
+    flex-direction: column;
+    padding: 5% 2%;
+  }
+
+  .left-side, .right-side {
+    flex: none;
+    padding: 20px;
+  }
+
+  .right-side {
+    background-image: none;
+  }
+
+  .content h2{
+    font-size: 42px;
+  }
+
+  .content p{
+    font-size: 16px;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .link .hire{
+    font-size: 14px;
+    padding: 10px 24px;
+  }
+
+  .container-about {
+    padding-top: 10px;
+    padding-right: 0;
+  }
+
+  .content-about {
+    width: 100%;
+    padding: 2% 2% 5% 2%;
+  }
+
+  .container-experiences {
+    padding: 20px;
+  }
+
+  .exp-main-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .exp-title {
+    margin-bottom: 10px;
+  }
+
+  .floating-btn {
+    font-size: 16px;
+    padding: 12px 20px;
+    bottom: 10px;
+    right: 10px;
+  }
+  body{
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+}
+/*end*/
