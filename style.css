@@ -5,11 +5,6 @@
   box-sizing: border-box;
   font-family: 'Montserrat';
 }
-/*
-html {
-  scroll-behavior: smooth;
-}
-*/
 body{
   overflow-x: hidden;
   margin: 0;
@@ -73,9 +68,6 @@ section {
 }
 /*end*/
 /*Experiences Section start*/
-.container-experiences {
-  
-}
 .exp-main-container {
   display: flex;
   background-color: #0000002d;
