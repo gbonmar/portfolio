@@ -5,10 +5,44 @@
   box-sizing: border-box;
   font-family: 'Montserrat';
 }
+/*
+html {
+  scroll-behavior: smooth;
+}
+*/
 body{
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+}
+.split-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+/*Left Side div start*/
+.left-side {
+  flex: 1;
+  color: #fff;
+  padding: 20px;
+  background-color: #000;
+}
+.content {
+  margin-top: 10%;
+  max-width: 100%;
+}
+/*end*/
+.right-side {
+  flex: 2;
+  overflow-y: scroll;
+  background-image: url(headshot-1.jpg);
+  background-position: right;
+  background-size: cover;
+}
+.split-col {
+  gap: 1rem;
+}
+section {
+  padding: 50px;
 }
 .container{
   width: 100%;
@@ -20,12 +54,72 @@ body{
   display: flex;
   padding-bottom: 2%;
 }
+/*About Section start*/
+.container-about {
+  height: 100vh;
+  width: 100%;
+  padding-top: 35px;
+  padding-left: 0;
+  padding-right: 4%;
+}
+.content-about {
+  width: 50%;
+  padding: 3% 3% 3% 3%;
+  margin-top: 7%;
+  background-color: #0000006c;
+  border-radius: 20px;
+  border-width: 1px;
+  border-color: #0000002d;
+}
+/*end*/
+/*Experiences Section start*/
+.container-experiences {
+  
+}
+.exp-main-container {
+  display: flex;
+  background-color: #0000002d;
+  padding: 3% 3% 3% 3%;
+  width: 80%;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+  display: flex;
+  list-style: none;
+}
+.float-ovals {
+  color: #918868;
+  background-color: #91886862;
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+  margin-right: 0.375rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  font-size: .75rem;
+}
+.exp-main-container:hover {
+  border-color: #fff;
+  border-width: 1px;
+  background-color: #91886828;
+  border-radius: 20px;
+}
+/*end*/
 .container-projects {
   height: 100vh;
   width: 100%;
   padding-top: 35px;
   padding-left: 8%;
   padding-right: 8%;
+}
+.content-project {
+  margin-top: 5%;
+}
+.content h2{
+  font-size: 48px
+}
+.content p{
+  margin-top: 10px;
+  line-height: 25px;
 }
 nav{
   padding: 10px 0;
@@ -55,41 +149,6 @@ nav ul li a{
 nav ul li a:hover{
   color: #f9004d;
 }
-
-/* HIDDEN ITEMS FROM HERE*/
-.login{
-  text-decoration: none;
-  margin-right: 15px;
-  font-size: 18px;
-  color: #000;
-  display: none;
-}
-.btn{
-  background: #eee;
-  color: #000;
-  border-radius: 6px;
-  padding: 9px 25px;
-  text-decoration: none;
-  transition: 0.5s;
-  font-size: 12px;
-  display: none;
-}
-/* TO  HERE*/
-
-.content {
-  margin-top: 10%;
-  max-width: 100%;
-}
-.content-project {
-  margin-top: 5%;
-}
-.content h2{
-  font-size: 48px
-}
-.content p{
-  margin-top: 10px;
-  line-height: 25px;
-}
 a{
   color: #fff;
 }
@@ -113,46 +172,6 @@ a{
 .my-logo {
     height: 30px;
     margin-bottom: -5px;
-}
-.split-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.left-side {
-  flex: 1;
-  color: #fff;
-  padding: 20px;
-  background-color: #000;
-}
-.right-side {
-  flex: 2;
-  overflow-y: scroll;
-  background-color: #000;
-}
-.split-col {
-  gap: 1rem;
-}
-section {
-  padding: 50px;
-}
-.container-about {
-  height: 100vh;
-  width: 100%;
-  padding-top: 35px;
-  padding-left: 0;
-  padding-right: 4%;
-  background-image: url(headshot-1.png);
-  background-position: right;
-  background-size: cover;
-}
-.content-about {
-  width: 50%;
-  padding: 3% 3% 3% 3%;
-  margin-top: 7%;
-  background-color: #0000006c;
-  border-radius: 20px;
-  border-width: 1px;
-  border-color: #0000002d;
 }
 .mb-4 {
   margin-bottom: 1rem;
@@ -183,33 +202,29 @@ section {
 .exp-col-2 {
   flex: .5;
 }
-.exp-main-container {
-  display: flex;
-  background-color: #0000002d;
-  padding: 3% 3% 3% 3%;
-  width: 80%;
-}
 h1, h2, h3, h4, h5 {
   margin-bottom: .5rem;
 }
-.flex-wrap {
-  flex-wrap: wrap;
-  display: flex;
-  list-style: none;
+#chat-container {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 400px;
+  margin: 0 auto;
 }
-.float-ovals {
-  color: #918868;
-  background-color: #91886862;
-  border-radius: 9999px;
-  padding: 0.25rem 0.75rem 0.25rem 0.75rem;
-  margin-right: 0.375rem;
-  line-height: 1.25rem;
-  font-weight: 600;
-  font-size: .75rem;
+
+#chat-messages {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 10px;
 }
-.exp-main-container:hover {
-  border-color: #fff;
-  border-width: 1px;
-  background-color: #91886828;
-  border-radius: 20px;
+
+#chat-form input[type="text"] {
+  width: 75%;
+  padding: 5px;
+}
+
+#chat-form button {
+  padding: 5px 10px;
+  margin-left: 5px;
 }
