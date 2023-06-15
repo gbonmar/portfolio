@@ -73,7 +73,11 @@ section {
 /*end*/
 /*Experiences Section start*/
 .container-experiences {
-  margin: 0;
+  height: 100vh;
+  width: 100%;
+  padding-top: 35px;
+  padding-left: 0;
+  padding-right: 4%;
 }
 .exp-main-container {
   display: flex;
@@ -107,10 +111,11 @@ section {
 /*end*/
 /* Random Quote Generator start */
 .container-projects {
-  background-color: #0000002d;
-  padding: 3% 3% 3% 3%;
-  width: 80%;
-  border-radius: 20px;
+  height: 100vh;
+  width: 100%;
+  padding-top: 35px;
+  padding-left: 0;
+  padding-right: 4%;
 }
 .content-project {
   margin-top: 5%;
@@ -118,6 +123,10 @@ section {
 .container-rqg {
   text-align: center;
   height: 500px;
+  background-color: #0000002d;
+  padding: 3% 3% 3% 3%;
+  width: 80%;
+  border-radius: 20px;
 }
 .rqg-h3 {
   color: #fff;
@@ -317,6 +326,7 @@ h1, h2, h3, h4, h5 {
 
   .container-experiences {
     padding: 20px;
+    height: 100%;
   }
 
   .exp-main-container {
@@ -336,6 +346,7 @@ h1, h2, h3, h4, h5 {
     background-color: #91886828;
     border-radius: 20px;
     height: 100%;
+    width: 100%;
   }
 
   .exp-title {
@@ -421,12 +432,7 @@ h1, h2, h3, h4, h5 {
 
   .container-experiences {
     padding: 20px;
-  }
-
-  .container-projects {
-    width: 100%;
-    padding: 20px;
-    padding: 0 20px 20px 20px;
+    height: 100%;
   }
 
   .exp-main-container {
@@ -446,6 +452,13 @@ h1, h2, h3, h4, h5 {
     background-color: #91886828;
     border-radius: 20px;
     height: 100%;
+    width: 100%;
+  }
+
+  .container-projects {
+    width: 100%;
+    padding: 20px;
+    padding: 0 20px 20px 20px;
   }
 
   .exp-title {
