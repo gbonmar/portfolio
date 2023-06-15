@@ -116,12 +116,15 @@ section {
 }
 .container-rqg {
   text-align: center;
+  height: 500px;
 }
 .rqg-h3 {
   color: #fff;
 }
 .quote{
   color: #fff;
+  font-size: 35px;
+  font-weight: 600;
 }
 .rqg-btn {
   margin-top: 20px;
