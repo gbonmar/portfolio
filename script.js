@@ -20,7 +20,14 @@ var quotes = [
   "Bakit pag inubos ko ba to mabubusog yung mga bata? <br>-Julius Canares",
   "Hayaan mo sila par, basta tayo di cheater. <br>-John Harold Pineda",
   "Grind muna ko par. Pabili cobra. <br>-Nikko Prudente",
-  "TFT is life. <br>-Nikko Prudente"
+  "TFT is life. <br>-Nikko Prudente",
+  "Kumpleto ko na tulog ko na 8hrs pero per week. <br>-Nathaniel Bilo",
+  "Hala ako nanaman? Kakashot ko lang ha. <br>-Bonmar Guilleno",
+  "Kaya lang ako sumama kasi alam kong mabubusog ako. <br>-Nathaniel Bilo",
+  "Pwede nako umuwi, busog nako. <br>-Nathaniel Bilo",
+  "Wait lang par may kunin lang ako, oh iwan ko sapatos ko. <br>-John Clark Pineda",
+  "Self-love nalang ako par. <br>-John Harold Pineda",
+  "Bobo mo talaga moontoon. <br>-John Harold Pineda"
 ];
 
 function generateQuote() {
