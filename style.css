@@ -265,6 +265,16 @@ h1, h2, h3, h4, h5 {
 
 /*RESPONSIVE*/
 
+/* Media queries for 1367 below screen */
+@media only screen and (max-width: 1366px) {
+  .nav-items {
+    text-align: center;
+  }
+  nav {
+    display: block;
+  }
+}
+
 /* Media queries for mobile devices */
 @media only screen and (max-width: 600px) {
 
