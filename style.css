@@ -359,6 +359,7 @@ h1, h2, h3, h4, h5 {
   .container-projects {
     width: 100%;
     padding: 20px;
+    padding: 0 20px 20px 20px;
   }
 
 }
@@ -420,6 +421,12 @@ h1, h2, h3, h4, h5 {
 
   .container-experiences {
     padding: 20px;
+  }
+
+  .container-projects {
+    width: 100%;
+    padding: 20px;
+    padding: 0 20px 20px 20px;
   }
 
   .exp-main-container {
