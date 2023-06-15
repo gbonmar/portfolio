@@ -32,6 +32,7 @@ body{
   background-image: url(headshot-1.jpg);
   background-position: right;
   background-size: cover;
+  
 }
 .right-side::-webkit-scrollbar {
     display: none;
@@ -71,11 +72,15 @@ section {
 }
 /*end*/
 /*Experiences Section start*/
+.container-experiences {
+  margin: 0;
+}
 .exp-main-container {
   display: flex;
   background-color: #0000002d;
   padding: 3% 3% 3% 3%;
   width: 80%;
+  border-radius: 20px;
 }
 .flex-wrap {
   flex-wrap: wrap;
@@ -99,16 +104,34 @@ section {
   border-radius: 20px;
 }
 /*end*/
+/* Random Quote Generator start */
 .container-projects {
-  height: 100vh;
-  width: 100%;
-  padding-top: 35px;
-  padding-left: 8%;
-  padding-right: 8%;
+  background-color: #0000002d;
+  padding: 3% 3% 3% 3%;
+  width: 80%;
+  border-radius: 20px;
 }
 .content-project {
   margin-top: 5%;
 }
+.container-rqg {
+  text-align: center;
+}
+.rqg-h3 {
+  color: #fff;
+}
+.quote{
+  color: #fff;
+}
+.rqg-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+/*end*/
 .content h2{
   font-size: 48px
 }
@@ -200,26 +223,29 @@ a{
 h1, h2, h3, h4, h5 {
   margin-bottom: .5rem;
 }
-#chat-container {
-  background-color: #f5f5f5;
-  padding: 10px;
-  border-radius: 5px;
-  max-width: 400px;
-  margin: 0 auto;
+/* Floating Button */
+.floating-btn {
+	border-radius: 26.5px;
+	background-color: #001F61;
+	border: 1px solid #001F61;
+	box-shadow: 0 16px 22px -17px #03153B;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 12px 20px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 999;
 }
 
-#chat-messages {
-  max-height: 300px;
-  overflow-y: auto;
-  margin-bottom: 10px;
+.floating-btn:hover {
+	background-color: #ffffff;
+	color: #001F61;
 }
 
-#chat-form input[type="text"] {
-  width: 75%;
-  padding: 5px;
+.floating-btn:focus {
+	outline: none;
 }
-
-#chat-form button {
-  padding: 5px 10px;
-  margin-left: 5px;
-}
+/*end*/
