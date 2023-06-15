@@ -8,7 +8,7 @@ document.querySelectorAll('a[href^="#"').forEach(anchor => {
 })
 
 
-import firebase from 'firebase/app';
+import firebase from './firebaseConfig';
 import 'firebase/database';
 
 const firebaseConfig = {
@@ -25,8 +25,6 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 export default firebase;
-
-import firebase from './firebaseConfig';
 
 // Now you can use the `firebase` object to interact with Firebase services
 const database = firebase.database();
