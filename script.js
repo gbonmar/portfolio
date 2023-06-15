@@ -1,12 +1,8 @@
-$(document).ready(function() {
-  // Smooth scrolling for navigation links
-  $('a[href^="#"]').on('click', function(event) {
-    event.preventDefault();
-    var target = $(this.getAttribute('href'));
-    if (target.length) {
-      $('html, body').stop().animate({
-        scrollTop: target.offset().top
-      }, 1000);
-    }
-  });
-});
+document.querySelectorAll('a[href^="#"').forEach(anchor => {
+  anchor.addEventListener("click", function(e){
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior : "smooth"
+    });
+  })
+})
