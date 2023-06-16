@@ -249,14 +249,14 @@ h1, h2, h3, h4, h5 {
 /* Floating Button */
 .floating-btn {
 	color: #918868;
-  	background-color: #91886862;
-  	border-radius: 26.5px;
-  	cursor: pointer;
+  background-color: #91886862;
+  border-radius: 26.5px;
+  cursor: pointer;
 	font-size: 16px;
 	line-height: 20px;
 	padding: 12px 20px;
-  	text-decoration: none;
-  	font-weight: 600;
+  text-decoration: none;
+  font-weight: 600;
 	position: fixed;
 	top: 20px;
 	left: 20px;
@@ -271,10 +271,18 @@ h1, h2, h3, h4, h5 {
 .floating-btn:focus {
 	outline: none;
 }
+.mobile-only {
+  border-radius: 20px;
+  padding: .5rem;
+}
 /*end*/
 
 /*RESPONSIVE*/
-
+@media only screen and (min-width: 1024px) {
+  .mobile-only {
+    display: none;
+  }
+}
 /* Media queries for 1367 below screen */
 @media only screen and (max-width: 1366px) {
   .nav-items {
@@ -298,6 +306,20 @@ h1, h2, h3, h4, h5 {
   }
   .logo {
     text-align: left;
+  }
+  .floating-btn {
+    color: #918868;
+    background-color: #91886862;
+    border-radius: 26.5px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .exp-col-1 {
+    margin-left: 0;
   }
 }
 
@@ -378,6 +400,9 @@ h1, h2, h3, h4, h5 {
     padding: 20px;
     height: 100%;
   }
+  .exp-col2 {
+    margin-bottom:  0;
+  }
 
   .exp-main-container {
     flex-direction: column;
@@ -395,8 +420,6 @@ h1, h2, h3, h4, h5 {
     border-width: 1px;
     background-color: #91886828;
     border-radius: 20px;
-    height: 100%;
-    width: 100%;
   }
 
   .exp-title {
@@ -422,6 +445,24 @@ h1, h2, h3, h4, h5 {
     padding: 20px;
     padding: 0 20px 20px 20px;
     height: 100%;
+  }
+  .floating-btn {
+    color: #918868;
+    background-color: #91886862;
+    border-radius: 26.5px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+  }
+  .exp-col-1 {
+    margin-left: 0;
   }
 
 }
@@ -516,8 +557,6 @@ h1, h2, h3, h4, h5 {
     border-width: 1px;
     background-color: #91886828;
     border-radius: 20px;
-    height: 100%;
-    width: 100%;
   }
 
   .container-projects {
