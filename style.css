@@ -83,7 +83,7 @@ section {
   display: flex;
   background-color: #0000002d;
   padding: 3% 3% 3% 3%;
-  width: 80%;
+  width: 100%;
   border-radius: 20px;
 }
 .flex-wrap {
@@ -101,6 +101,10 @@ section {
   line-height: 1.25rem;
   font-weight: 600;
   font-size: .75rem;
+}
+.exp-main-container:hover .float-ovals {
+  background-color: #918868;
+  color: #000;
 }
 .exp-main-container:hover {
   border-color: #fff;
@@ -122,11 +126,17 @@ section {
 }
 .container-rqg {
   text-align: center;
-  height: 500px;
+  height: 50%;
   background-color: #0000002d;
   padding: 3% 3% 3% 3%;
-  width: 80%;
   border-radius: 20px;
+  margin: 10%;
+}
+.body-rqg{
+  overflow: hidden;
+  background-image: url(headshot-1.jpg);
+  background-position: right;
+  background-size: cover;
 }
 .rqg-h3 {
   color: #fff;
@@ -183,18 +193,18 @@ a{
   margin-top: 30px;
 }
 .hire{
-  color: #000;
+  color: #918868;
+  background-color: #91886862;
+  border-radius: 26.5px;
+  cursor: pointer;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 12px 20px;
   text-decoration: none;
-  background: #fff;
-  padding: 9px 25px;
-  font-weight: bold;
-  border-radius: 6px;
-  transition: 0.5s;
+  font-weight: 600;
 }
-.link .hire:hover{
-  background: transparent;
-  border: 1px solid #fff;
-  color: #fff;
+.link-noline {
+  text-decoration: none;
 }
 .my-logo {
   height: 30px;
@@ -204,6 +214,9 @@ a{
   margin-bottom: 1rem;
   font-weight: 600;
   color: #b0b1b3;
+}
+.mb-12 {
+  margin-bottom: 1rem;
 }
 .mb-4 a {
   text-decoration: none;
@@ -225,6 +238,7 @@ a{
 }
 .exp-col-1 {
   flex: 2;
+  margin-left: 1rem;
 }
 .exp-col-2 {
   flex: .5;
@@ -244,8 +258,8 @@ h1, h2, h3, h4, h5 {
 	line-height: 20px;
 	padding: 12px 20px;
 	position: fixed;
-	bottom: 20px;
-	right: 20px;
+	top: 20px;
+	left: 20px;
 	z-index: 999;
 }
 
