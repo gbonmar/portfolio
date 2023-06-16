@@ -248,15 +248,15 @@ h1, h2, h3, h4, h5 {
 }
 /* Floating Button */
 .floating-btn {
-	border-radius: 26.5px;
-	background-color: #001F61;
-	border: 1px solid #001F61;
-	box-shadow: 0 16px 22px -17px #03153B;
-	color: #fff;
-	cursor: pointer;
+	color: #918868;
+  	background-color: #91886862;
+  	border-radius: 26.5px;
+  	cursor: pointer;
 	font-size: 16px;
 	line-height: 20px;
 	padding: 12px 20px;
+  	text-decoration: none;
+  	font-weight: 600;
 	position: fixed;
 	top: 20px;
 	left: 20px;
