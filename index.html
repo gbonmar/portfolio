@@ -2,7 +2,7 @@
 <html lang="en">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <head>
-  <!---api--->
+  <!---seo--->
   <meta property="og:image" content="https://gbonmar.github.io/portfolio/preview.jpg" />
   <meta property="og:description" content="One of the greatest web developer in Las Pinas city. Creating and designing website is my specialty." />
   <meta property="og:url"content="https://gbonmar.github.io/portfolio/" />
@@ -10,6 +10,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!---title-->
   <title>Bonmar Guilleno - Portfolio</title>
   <!---css--->
   <link rel="stylesheet" href="style.css">
@@ -18,7 +19,7 @@
 <body>
   <div class="container">
       <div class="left-side">
-        <nav>
+        <nav id="navbar">
           <div class="logo">
             <a href="#about"><img src="horizontal-wht.png" class="my-logo"></a>
           </div>
@@ -30,7 +31,7 @@
         </nav>
         <section class="mobile-div hidden-up show4">
           <div class="content">
-            <h2>Bonmar Guilleno</h2>
+            <h2 class="desktop-h2 mobile-h2 tablet-h2 sdesktop-h2">Bonmar Guilleno</h2>
             <h4>Web Developer</h4>
             <p>Hardcode? Wordpress? Webflow? I make beautiful and functionable websites.</p>
           </div>
@@ -42,20 +43,27 @@
       <div class="right-side">
         <section id="about" class="about">
           <div class="container-about">
-            <div class="split-col">
+            <div class="split-col hidden-left show">
               <div class="content-about hidden-right show">
                 <div class="mobile-only">
                   <img src="ID Picture.JPG" width="100%" height="100%">
                 </div>
-                <p class="mb-4">
-                  Hello, I'm Bonmar Guilleno, and I'm a web designer and developer who has a passion for building interesting and user-friendly websites. I'm confident in creating responsive and interactive website using HTML, CSS, and JavaScript. Additionally, I've worked with Webflow and Wordpress website builders and also have a familiarity with PHP.
-                </p>
-                <p class="mb-4">
-                  I like badminton and traveling, especially the food of the newly explored place, so I have a lot of interests outside of the internet world. I spend my free time engaging in my interests or looking for ideas for my next project when I'm not completely involved in the world of web development.
-                </p>
-                <p class="mb-4">
-                  I've worked on a number of website development projects for more than 22 months in my previous company <a href="https://www.luxurypresence.com/">Luxury Presence</a>, including a significant switch from v2 to v3 platforms as my project. My current priorities include expanding my portfolio and honing my abilities to design compelling and unique digital products.
-                </p>
+                <div class="about-row-2">
+                  <p class="mb-4">
+                    Hello, I'm Bonmar Guilleno, and I'm a web designer and developer who has a passion for building interesting and user-friendly websites. I'm confident in creating responsive and interactive website using HTML, CSS, and JavaScript. Additionally, I've worked with Webflow and Wordpress website builders and also have a familiarity with PHP.
+                  </p>
+                  <p class="mb-4">
+                    I like badminton and traveling, especially the food of the newly explored place, so I have a lot of interests outside of the internet world. I spend my free time engaging in my interests or looking for ideas for my next project when I'm not completely involved in the world of web development.
+                  </p>
+                  <p class="mb-4">
+                    I've worked on a number of website development projects for more than 22 months in my previous company <a href="https://www.luxurypresence.com/">Luxury Presence</a>, including a significant switch from v2 to v3 platforms as my project. My current priorities include expanding my portfolio and honing my abilities to design compelling and unique digital products.
+                  </p>
+                </div>
+              </div>
+              <div id="slider">
+                <img src="headshot.jpg" alt="Image 1">
+                <img src="headshot1.jpg" alt="Image 2">
+                <img src="headshot-1.jpg" alt="Image 3">
               </div>
             </div>
           </div>
@@ -128,7 +136,7 @@
                   </header>
                   <div class="col-2-span-1 exp-col-1">
                     <p class="mb-4">
-                    Developed a newer version of my long deleted Portfolio Website.
+                    Developing a newer version of my long deleted Portfolio Website.
                     </p>
                     <ul class="flex-wrap">
                       <li class="float-ovals">JavaScript</li>
@@ -155,10 +163,10 @@
                   <div>
 
                   </div>
-                  <header class="col-1-span-1 exp-col-txt exp-col-2">
-                    <img src="preview.jpg" width="100%" height="100%">
+                  <header class="col-1-span-1 exp-col-txt project-col-2">
+                    <img class="project-img" src="preview.jpg">
                   </header>
-                  <div class="col-2-span-1 exp-col-1">
+                  <div class="col-2-span-1 project-col-1">
                     <p class="mb-4">
                       A JavaScript-powered project. Similar to random password generator, this is a random words generator with a load of preset data.
                     </p>
@@ -167,30 +175,31 @@
               </a>
               </li>
               <li class="mb-12">
+                <a class="link-noline" href="https://github.com/gbonmar/chat-app.git">
                 <div class="project-container hidden-right show">
                   <div>
 
                   </div>
-                  <header class="col-1-span-1 exp-col-txt exp-col-2">
-                    <img src="preview.jpg" width="100%" height="100%"><!--PLACE YOUR IMAGE HERE-->
+                  <header class="col-1-span-1 exp-col-txt project-col-2">
+                    <img class="project-img" src="chat-app.gif">
                   </header>
-                  <div class="col-2-span-1 exp-col-1">
+                  <div class="col-2-span-1 project-col-1">
                     <p class="mb-4">
-                    Employed by a fast-paced website building company, trained to building web apps from the scratch for 3 months. Deployed to the Revisions Team, collaborated with Data Specialists providing data of the client, 
-                    developed web apps for <a href="https://www.luxurypresence.com/">Luxury Presence</a> following the SOPs. 
+                    A ChatApp using ExpressJS, Socket.io & NodeJS. Great project starter for anyone want to integrate a real-time chat app to their websites and projects.
                     </p>
                   </div>
                 </div>
+              </a>
               </li>
               <li class="mb-12">
                 <div class="project-container hidden-left show">
                   <div>
 
                   </div>
-                  <header class="col-1-span-1 exp-col-txt exp-col-2">
-                    <img src="preview.jpg" width="100%" height="100%"><!--PLACE YOUR IMAGE HERE-->
+                  <header class="col-1-span-1 exp-col-txt project-col-2">
+                    <img class="project-img" src="preview.jpg"><!--PLACE YOUR IMAGE HERE-->
                   </header>
-                  <div class="col-2-span-1 exp-col-1">
+                  <div class="col-2-span-1 project-col-1">
                     <p class="mb-4">
                     Employed by a fast-paced website building company, trained to building web apps from the scratch for 3 months. Deployed to the Revisions Team, collaborated with Data Specialists providing data of the client, 
                     developed web apps for <a href="https://www.luxurypresence.com/">Luxury Presence</a> following the SOPs. 
