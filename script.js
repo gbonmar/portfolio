@@ -2,32 +2,25 @@
 var quotes = [
   "Roses are red, violets are blue, I love you. <br>-Bonmar Guilleno",
   "Atleast di ako cheater, par. <br>-John Harold Pineda",
-  "Saan tayo par? Teka lang mag sundo lang ako. <br>-John Clark Pineda",
+  "Saan tayo par? Teka lang mag sunod lang ako. <br>-John Clark Pineda",
   "Oo nga nickers, ambobo mo. <br>-Julius Canares",
   "Awit sayo par. <br>-Nathaniel Bilo",
   "Cobra tayo par. <br>-Nikko Prudente",
   "Tara nomi. <br>-Jc Vasquez",
   "Nayy. <br>-Julius Canares",
   "Tae muna ko par. <br>-John Harold Pineda",
-  "Edi okay. <br>-Bonmar Guilleno",
+  "Bobo mo julay. <br>-Bonmar Guilleno",
   "Bobo mo naman Bonmar. <br>-Julius Canares",
   "Luto tayo par, foodtrip, ayaw nyo? Di wag. <br>-John Harold Pineda",
   "Inom nanaman lakas nyo talaga mag inom. <br>-Nathaniel Bilo",
   "ML. <br>-John Clark Pineda",
   "Oo nga bobo mo clark. <br>-Julius Canares",
-  "Popogi pa yan tulad ko. <br>-Bonmar Guilleno",
+  "HAHAHAHA GE. <br>-Bonmar Guilleno",
   "Ibang bata nga walang makain eh. <br>-Bonmar Guilleno",
   "Bakit pag inubos ko ba to mabubusog yung mga bata? <br>-Julius Canares",
   "Hayaan mo sila par, basta tayo di cheater. <br>-John Harold Pineda",
   "Grind muna ko par. Pabili cobra. <br>-Nikko Prudente",
-  "TFT is life. <br>-Nikko Prudente",
-  "Kumpleto ko na tulog ko na 8hrs pero per week. <br>-Nathaniel Bilo",
-  "Hala ako nanaman? Kakashot ko lang ha. <br>-Bonmar Guilleno",
-  "Kaya lang ako sumama kasi alam kong mabubusog ako. <br>-Nathaniel Bilo",
-  "Pwede nako umuwi, busog nako. <br>-Nathaniel Bilo",
-  "Wait lang par may kunin lang ako, oh iwan ko sapatos ko. <br>-John Clark Pineda",
-  "Self-love nalang ako par. <br>-John Harold Pineda",
-  "Bobo mo talaga moontoon. <br>-John Harold Pineda"
+  "TFT is life. <br>-Nikko Prudente"
 ];
 
 function generateQuote() {
@@ -36,6 +29,73 @@ function generateQuote() {
   quoteElement.innerHTML = quotes[randomIndex];
 }
 //end
+
+// Animation effect - Start
+
+const observer = new IntersectionObserver ((entries) => {
+  entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+      } else {
+          entry.target.classList.remove('show');
+      }
+  });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden-right');
+const hiddenElements2 = document.querySelectorAll('.hidden-left');
+hiddenElements.forEach((el) => observer.observe(el));
+hiddenElements2.forEach((el) => observer.observe(el));
+
+
+
+
+
+const observer3 = new IntersectionObserver ((entries) => {
+  entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+          entry.target.classList.add('show2');
+      } else {
+          entry.target.classList.remove('show2');
+      }
+  });
+});
+
+const hiddenElements3 = document.querySelectorAll('.hidden');
+hiddenElements3.forEach((el) => observer3.observe(el));
+
+
+
+const observer4 = new IntersectionObserver ((entries) => {
+  entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+          entry.target.classList.add('show3');
+      } else {
+          entry.target.classList.remove('show3');
+      }
+  });
+});
+
+const hiddenElements4 = document.querySelectorAll('.hidden-up');
+hiddenElements4.forEach((el) => observer4.observe(el));
+
+
+
+const observer5 = new IntersectionObserver ((entries) => {
+  entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+          entry.target.classList.add('show4');
+      } else {
+          entry.target.classList.remove('show4');
+      }
+  });
+});
+
+const hiddenElements5 = document.querySelectorAll('.hidden');
+hiddenElements5.forEach((el) => observer5.observe(el));
+
+
+// Animation effect - End
 
 
 document.querySelectorAll('a[href^="#"').forEach(anchor => {

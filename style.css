@@ -191,6 +191,7 @@ a{
 }
 .link {
   margin-top: 30px;
+  font-weight: 600;
 }
 .hire{
   color: #918868;
@@ -275,11 +276,64 @@ h1, h2, h3, h4, h5 {
   border-radius: 20px;
   padding: .5rem;
 }
+.hidden-left{
+  opacity:0;
+  filter:blur(5px);
+  transform:translateX(-100%);
+  transition:all 1s
+}
+.hidden-right{
+  opacity:0;
+  filter:blur(5px);
+  transform:translateX(100%);
+  transition:all 1s
+}
+.show{
+  opacity:1;
+  filter:blur(0);
+  transform:translateX(0)
+}
+.hidden-up{
+  opacity:0;
+  filter:blur(5px);
+  transform:translateY(100%);
+  transition:all 1s
+}
+.show3{
+  opacity:1;
+  filter:blur(0);
+  transform:translateY(0)
+}
+.hidden{
+  opacity:0;
+  filter:blur(5px);
+  transition:all 1s
+}
+.show4{
+  opacity:1;
+  filter:blur(0)
+}
+.project-container {
+  display: flex;
+  background-color: #0000002d;
+  padding: 3% 3% 3% 3%;
+  width: 100%;
+  border-radius: 20px;
+}
+.project-container:hover {
+  border-color: #fff;
+  border-width: 1px;
+  background-color: #91886828;
+  border-radius: 20px;
+}
 /*end*/
 
 /*RESPONSIVE*/
 @media only screen and (min-width: 1024px) {
   .mobile-only {
+    display: none;
+  }
+  .mobile-btn {
     display: none;
   }
 }
@@ -357,7 +411,6 @@ h1, h2, h3, h4, h5 {
     padding: 20px;
     background-color: #000;
   }
-  
   .right-side {
     flex: none;
     background-image: none;
@@ -365,25 +418,25 @@ h1, h2, h3, h4, h5 {
     background-color: #000;
     overflow-y: hidden;
   }
-
   .content h2{
     font-size: 36px;
   }
-
   .content p{
     font-size: 14px;
   }
-
   nav ul li {
     display: block;
     margin: 10px 0;
   }
-
   .link .hire{
     font-size: 12px;
     padding: 8px 20px;
+    font-weight: 600;
+    border-radius: 26.5px;
+    cursor: pointer;
+    height: 100px;
+    width: 100%;
   }
-
   .container-about {
     padding-top: 10px;
     padding-right: 0;
@@ -394,6 +447,7 @@ h1, h2, h3, h4, h5 {
     width: 100%;
     padding: 10px 10px 10px 10px;
     background-color: #474747;
+    margin-top: 0;
   }
 
   .container-experiences {
@@ -413,6 +467,15 @@ h1, h2, h3, h4, h5 {
     background-color: #91886828;
     border-radius: 20px;
   }
+  .project-container{
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    border-color: #fff;
+    border-width: 1px;
+    background-color: #91886828;
+    border-radius: 20px;
+  }
   .container-rqg {
     margin-top: 0;
     padding: 20px;
@@ -421,16 +484,25 @@ h1, h2, h3, h4, h5 {
     background-color: #91886828;
     border-radius: 20px;
   }
-
+  .mobile-btn {
+    color: #000;
+    background-color: #91886862;
+    border-radius: 26.5px;
+    cursor: pointer;
+    height: 100px;
+    width: 100%;
+    font-size: 36px;
+    font-weight: 600;
+  }
+  .btn-space {
+    padding: 20px;
+  }
   .exp-title {
     margin-bottom: 10px;
   }
 
   .floating-btn {
-    font-size: 14px;
-    padding: 10px 16px;
-    bottom: 10px;
-    right: 10px;
+    display: none;
   }
   body{
     overflow: auto;
@@ -446,25 +518,20 @@ h1, h2, h3, h4, h5 {
     padding: 0 20px 20px 20px;
     height: 100%;
   }
-  .floating-btn {
-    color: #918868;
-    background-color: #91886862;
-    border-radius: 26.5px;
-    cursor: pointer;
-    font-size: 16px;
-    line-height: 20px;
-    padding: 12px 20px;
-    text-decoration: none;
-    font-weight: 600;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 999;
-  }
   .exp-col-1 {
     margin-left: 0;
   }
-
+  .mobile-div {
+    display: block;
+  }
+  .link .hire {
+    padding: 15px;
+    font-size: 1rem;
+    height: 100%;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
 }
 
 /* Media queries for tablets */
@@ -550,6 +617,15 @@ h1, h2, h3, h4, h5 {
     background-color: #91886828;
     border-radius: 20px;
   }
+  .project-container {
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    border-color: #fff;
+    border-width: 1px;
+    background-color: #91886828;
+    border-radius: 20px;
+  }
   .container-rqg {
     margin-top: 0;
     padding: 20px;
@@ -569,12 +645,8 @@ h1, h2, h3, h4, h5 {
   .exp-title {
     margin-bottom: 10px;
   }
-
   .floating-btn {
-    font-size: 16px;
-    padding: 12px 20px;
-    bottom: 10px;
-    right: 10px;
+    display: none;
   }
   body{
     overflow: auto;
@@ -584,6 +656,18 @@ h1, h2, h3, h4, h5 {
   .right-side::-webkit-scrollbar {
     display: block;
   }
-
+  .mobile-btn {
+    color: #000;
+    background-color: #91886862;
+    border-radius: 26.5px;
+    cursor: pointer;
+    height: 100px;
+    width: 100%;
+    font-size: 36px;
+    font-weight: 600;
+  }
+  .btn-space {
+    padding: 20px;
+  }
 }
 /*end*/
