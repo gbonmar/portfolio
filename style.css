@@ -416,11 +416,18 @@ button {
   font-size: 2rem;
   color: #fff;
 }
+.mobile-icon{
+  width: 20px;
+  height: 20px;
+}
 /*end*/
 
 /*RESPONSIVE*/
 @media only screen and (min-width: 1024px) {
   .mobile-only {
+    display: none;
+  }
+  .mobile-icon {
     display: none;
   }
   .mobile-btn {
