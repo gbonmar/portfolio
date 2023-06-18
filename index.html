@@ -10,18 +10,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <!---title-->
   <title>Bonmar Guilleno - Portfolio</title>
   <!---css--->
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="Images/Global/favicon.ico">
 </head>
 <body>
   <div class="container">
       <div class="left-side">
         <nav id="navbar">
           <div class="logo">
-            <a href="#about"><img src="horizontal-wht.png" class="my-logo"></a>
+            <a href="#about"><img src="Images/Global/horizontal-wht.png" class="my-logo"></a>
           </div>
           <ul class="nav-items">
             <li class="li-item"><a href="#about">ABOUT</a></li>
@@ -36,17 +38,17 @@
             <p>Hardcode? Wordpress? Webflow? I make beautiful and functionable websites.</p>
           </div>
           <div class="link">
-            <a href="GUILLENO-BONMAR-RESUME.pdf" class="hire">Download Resumé</a>
+            <a href="Files/GUILLENO-BONMAR-RESUME.pdf" class="hire">Download Resumé</a>
           </div>
         </section>
       </div>
       <div class="right-side">
         <section id="about" class="about">
           <div class="container-about">
-            <div class="split-col hidden-left show">
+            <div class="split-col">
               <div class="content-about hidden-right show">
-                <div class="mobile-only">
-                  <img src="ID Picture.JPG" width="100%" height="100%">
+                <div class="mobile-only headshot">
+                  <img src="Images/Global/ID Picture.JPG" width="100%" height="100%">
                 </div>
                 <div class="about-row-2">
                   <p class="mb-4">
@@ -60,11 +62,23 @@
                   </p>
                 </div>
               </div>
-              <div id="slider">
-                <img src="headshot.jpg" alt="Image 1">
-                <img src="headshot1.jpg" alt="Image 2">
-                <img src="headshot-1.jpg" alt="Image 3">
-              </div>
+              <!--SLIDER-->
+              <div class="wrapper hidden-left show">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <div class="carousel">
+                  <img src="Images/Slider/image1.jpg" alt="img" draggable="false">
+                  <img src="Images/Slider/image2.jpg" alt="img" draggable="false">
+                  <img src="Images/Slider/image3.jpg" alt="img" draggable="false">
+                  <img src="Images/Slider/image4.jpg" alt="img" draggable="false">
+                  <img src="Images/Slider/image5.jpg" alt="img" draggable="false">
+                  <img src="Images/Slider/image6.jpg" alt="img" draggable="false">
+                  <img src="Images/Slider/image7.jpg" alt="img" draggable="false">
+                  <img src="Images/Slider/image8.jpg" alt="img" draggable="false">
+                  <img src="Images/Slider/image9.jpg" alt="img" draggable="false">
+                </div>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+              </div>              
+              <!--SLIDER-->            
             </div>
           </div>
         </section>
@@ -164,7 +178,7 @@
 
                   </div>
                   <header class="col-1-span-1 exp-col-txt project-col-2">
-                    <img class="project-img" src="preview.jpg">
+                    <img class="project-img" src="Images/Projects/rqg.gif">
                   </header>
                   <div class="col-2-span-1 project-col-1">
                     <p class="mb-4">
@@ -181,11 +195,11 @@
 
                   </div>
                   <header class="col-1-span-1 exp-col-txt project-col-2">
-                    <img class="project-img" src="chat-app.gif">
+                    <img class="project-img" src="Images/Projects/chat-app.gif">
                   </header>
                   <div class="col-2-span-1 project-col-1">
                     <p class="mb-4">
-                    A ChatApp using ExpressJS, Socket.io & NodeJS. Great project starter for anyone want to integrate a real-time chat app to their websites and projects.
+                      A ChatApp using ExpressJS, Socket.io & NodeJS. Great project starter for anyone want to integrate a real-time chat app to their websites and projects.
                     </p>
                   </div>
                 </div>
@@ -197,12 +211,11 @@
 
                   </div>
                   <header class="col-1-span-1 exp-col-txt project-col-2">
-                    <img class="project-img" src="preview.jpg"><!--PLACE YOUR IMAGE HERE-->
+                    <img class="project-img" src="Images/Projects/preview.jpg"><!--PLACE YOUR IMAGE HERE-->
                   </header>
                   <div class="col-2-span-1 project-col-1">
                     <p class="mb-4">
-                    Employed by a fast-paced website building company, trained to building web apps from the scratch for 3 months. Deployed to the Revisions Team, collaborated with Data Specialists providing data of the client, 
-                    developed web apps for <a href="https://www.luxurypresence.com/">Luxury Presence</a> following the SOPs. 
+                      Upcoming Laravel Project...
                     </p>
                   </div>
                 </div>
