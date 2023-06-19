@@ -36,7 +36,44 @@ function generateQuote() {
 
 // Random quote generator - End
 
+// Project open - Start
 
+
+function on() {
+  document.getElementById("overlayBackground").style.height = "100%";
+}
+
+function off() {
+  document.getElementById("overlayBackground").style.height = "0%";
+}
+
+
+function on1() {
+  document.getElementById("overlayProject01").style.height = "100%";
+}
+
+function off1() {
+  document.getElementById("overlayProject01").style.height = "0%";
+}
+
+function on2() {
+  document.getElementById("overlayProject02").style.height = "100%";
+}
+
+function off2() {
+  document.getElementById("overlayProject02").style.height = "0%";
+}
+
+function on3() {
+  document.getElementById("overlayProject03").style.height = "100%";
+}
+
+function off3() {
+  document.getElementById("overlayProject03").style.height = "0%";
+}
+
+
+// Project open - End
 
 
 // Animation effect - Start
@@ -209,10 +246,20 @@ carousel.addEventListener("touchend", dragStop);
 document.querySelectorAll('a[href^="#"').forEach(anchor => {
   anchor.addEventListener("click", function(e){
     e.preventDefault();
+
+    // Remove the active class from all anchors
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.classList.remove("active");
+    });
+
+    // Add the active class to the clicked anchor
+    this.classList.add("active");
+
     document.querySelector(this.getAttribute("href")).scrollIntoView({
       behavior : "smooth"
     });
   })
 })
+
 
 // Soft ID scroll - End

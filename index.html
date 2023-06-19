@@ -3,7 +3,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <head>
   <!---seo--->
-  <meta property="og:image" content="https://gbonmar.github.io/portfolio/Images/Projects/preview.jpg" />
+  <meta property="og:image" content="https://gbonmar.github.io/portfolio/preview.jpg" />
   <meta property="og:description" content="One of the greatest web developer in Las Pinas city. Creating and designing website is my specialty." />
   <meta property="og:url"content="https://gbonmar.github.io/portfolio/" />
   <meta property="og:title" content="Bonmar Guilleno - Web Developer" />
@@ -17,18 +17,28 @@
   <!---css--->
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-icon" href="Images/Global/favicon.ico">
+  <link rel="icon" href="Images/Global/newtab.png">
 </head>
 <body>
   <div class="container">
       <div class="left-side">
-        <nav id="navbar">
+        <nav id="navbar" class="navbar">
           <div class="logo">
-            <a href="#about"><img src="Images/Global/horizontal-wht.png" class="my-logo"></a>
+            <a href="index.html"><img src="Images/Global/horizontal-wht.png" class="my-logo"></a>
           </div>
           <ul class="nav-items">
-            <li class="li-item"><a href="#about">ABOUT</a></li>
-            <li class="li-item"><a href="#experiences">EXPERIENCES</a></li>
-            <li class="li-item"><a href="#projects">PROJECTS</a></li>
+            <li class="li-item">
+              <a href="#about" class="button type3">ABOUT
+              </a>
+            </li>
+            <li class="li-item">
+              <a href="#experiences" class="button type3">EXPERIENCES
+              </a>
+            </li>
+            <li class="li-item">
+              <a href="#projects" class="button type3">PROJECTS
+              </a>
+            </li>
           </ul>
         </nav>
         <section class="mobile-div hidden-up show4">
@@ -38,7 +48,7 @@
             <p>Hardcode? Wordpress? Webflow? I make beautiful and functionable websites.</p>
           </div>
           <div class="link">
-            <a href="Files/GUILLENO-BONMAR-RESUME.pdf" class="hire">Download Resumé</a>
+            <a href="Files/GUILLENO-BONMAR-RESUME.pdf" class="btn button type3">DOWNLOAD RESUMÉ</a>
           </div>
         </section>
       </div>
@@ -60,9 +70,168 @@
                   <p class="mb-4">
                     I've worked on a number of website development projects for more than 22 months in my previous company <a href="https://www.luxurypresence.com/">Luxury Presence</a>, including a significant switch from v2 to v3 platforms as my project. My current priorities include expanding my portfolio and honing my abilities to design compelling and unique digital products.
                   </p>
+                  <div class="link">
+                    <a class="btn button type3" onclick="on()">MORE ABOUT ME</a>
+                  </div>
                 </div>
               </div>
-              <!--SLIDER-->
+
+              <!-- MORE ABOUT ME POP-UP START -->
+
+<!-- MORE ABOUT ME POP-UP START -->
+
+<div id="overlayBackground">
+  <span id="My-About"></span>
+  <div class="myAboutOverlay">
+
+      <div class="overlayCloseButton" onclick="off()">
+          <img src="Images/Global/close.png" alt="" class="close-btn">
+      </div>
+
+      <!-- More about me start -->
+
+      <div class="aboutOverContainer">
+        <p class="mb-4 myAOText">
+          Hello, I'm Bonmar Guilleno, and I'm a web designer and developer who has a passion for building interesting and user-friendly websites. I'm confident in creating responsive and interactive website using HTML, CSS, and JavaScript. Additionally, I've worked with Webflow and Wordpress website builders and also have a familiarity with PHP.
+          <br><br>
+          I like badminton and traveling, especially the food of the newly explored place, so I have a lot of interests outside of the internet world. I spend my free time engaging in my interests or looking for ideas for my next project when I'm not completely involved in the world of web development.
+          <br><br>
+          I've worked on a number of website development projects for more than 22 months in my previous company <a href="https://www.luxurypresence.com/">Luxury Presence</a>, including a significant switch from v2 to v3 platforms as my project. My current priorities include expanding my portfolio and honing my abilities to design compelling and unique digital products.
+        </p>
+          <img src="Images/Global/ID Picture.JPG" alt="" class="myAOImg">
+      </div>
+      
+      <!-- More about me end -->
+
+      <!-- Education and seminar start -->
+      
+      <div class="myAOContainer">
+          <div class="myAOSeminar">
+              <h1 class="myAOTitle2">WORKSHOPS & AWARDS</h1>
+              <div class="myEducTextContainer">
+                <div class="hoverable-div">
+                  <div class="textContainer">
+                      <p class="educationTitle">Ethical Hacking</p>
+                      <p class="educationYear">(2023)</p>
+                  </div>
+                  <p class="educationText">Introduction to Blue Teaming. A vast learning workshop that extends to learning how blue team works including information gathering, tools used, types of threat, types of cyber attacks and the basics of active directory.</p>
+                </div>
+                <div class="hoverable-div">
+                  <div class="textContainer">
+                      <p class="educationTitle">First Responder</p>
+                      <p class="educationYear">(2021)</p>
+                  </div>
+                  <p class="educationText">For always being ready to go when needed and for being there to count on - Given by the Offshore Operation Executive and Team Leader/Revisions Pod Manager.</p>
+                </div>
+                <div class="hoverable-div">
+                  <div class="textContainer">
+                      <p class="educationTitle">99% Perspiration Award</p>
+                      <p class="educationYear">(2019)</p>
+                  <p class="educationText">For willingness to put in the hard work - Given by the Offshore Operation Executive and Team Leader/Revisions Pod Manager.</p>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="myAOEducational">
+          <h1 class="myAOTitle2">EDUCATION</h1>
+          <div class="myEducTextContainer">
+            <div class="hoverable-div">
+              <div class="textContainer">
+                  <p class="educationTitle">Technological University of the Philippines</p>
+                  <p class="educationYear">(2016- 2020)</p>
+              </div>
+              <p class="educationText">Bachelor of Technology<br>Major in Information Technology<br>Tertiary / Ayala Blvd. corner San Marcelino, 1000 Manila</p>
+            </div>
+            <div class="hoverable-div">  
+              <div class="textContainer">
+                  <p class="educationTitle">De La Salle Santiago Zobel BRafeNHS</p>
+                  <p class="educationYear">(2012 - 2016)</p>
+              </div>
+              <p class="educationText">High School Level Education</p>
+            </div>
+            <div class="hoverable-div">
+              <div class="textContainer">
+                  <p class="educationTitle">T.S. Cruz National High School</p>
+                  <p class="educationYear">(2011-2012)</p>
+              </div>
+              <p class="educationText">High School Level Education</p>   
+            </div>
+          </div>
+      </div>
+      </div>
+
+      <!-- Education and seminar end -->
+
+
+      <!-- Work experience start -->
+
+      <div class="myAOContainer2">
+
+          <h1 class="myAOTitle2">WORK EXPERIENCE</h1>
+          <div class="myAOWorkExperience">
+              <div class="myAOWorkTextContainer">
+                  <div class="myEducTextContainer">
+
+                    <!--
+                      <div class="workContainer" style="margin-top: -5px">
+                          <p class="workName">Internship | Adish International Corporation</p>
+                          <p class="workYear">February 2020 - May 2020</p>
+                      </div>
+                      <p class="workTitle">Front-end Web Developer</p>
+                      
+                      <p class="workText">I am delighted to share that I made a significant contribution to the development of the Adish International website. As part of the web development team, I played a crucial role in designing and implementing various features that enhance the user experience and showcase the brand's offerings. From collaborating with designers to create a visually appealing interface to coding the website's functionality, my efforts were instrumental in bringing the vision of Adish International to life. By incorporating responsive design principles and optimizing the site for different devices, I ensured that users can easily access and navigate the website from anywhere. It was a fulfilling experience to contribute my skills and expertise to this project, and I take pride in being part of the team that successfully built the Adish International website.</p>
+                      <br>
+
+                      <ul class="workList">
+                          <li class="workInfo">Throughout my internship at Adish International Corp, I dedicated a total of 500 hours to the organization, with 245 hours diligently spent working on-site at the company office, and the remaining 255 hours devoted to remote work as a front-end web developer.</li>
+                          <br>
+                          <li class="workInfo">In addition to my contribution to the development of the Adish International website, I played a crucial role in implementing an effective work update system using <strong>Trello </strong>. This system was designed to facilitate regular monitoring and communication with my team lead or head. 
+                          The Trello board served as a transparent and organized platform for work updates, ensuring that my head could easily monitor my progress and make informed decisions based on the information provided. This system allowed for effective collaboration, as my head could provide feedback, guidance, or adjustments to tasks directly within the Trello board.</li>
+                          <br>
+                          <li class="workInfo">As part of my role, I actively participated in knowledge sharing initiatives and collaborated with colleagues to exchange ideas and contribute to the design process. Recognizing the value of collective knowledge, I actively engaged in sharing my expertise and learning from others. Through various channels, such as team meetings, brainstorming sessions, and online platforms, I facilitated the exchange of knowledge within the organization. By openly sharing insights, best practices, and lessons learned, I fostered a culture of continuous learning and improvement.</li>
+                          <br>
+                          <li class="workInfo">We utilized <strong>WordPress</strong>, a popular content management system (CMS), to successfully upload and deploy our website theme, thereby making it accessible to visitors on the internet. WordPress is a highly versatile and user-friendly platform widely used for creating and managing websites without the need for extensive coding knowledge. By leveraging WordPress, We are able to take our website design or theme and effortlessly integrate it into the CMS. This involved utilizing the administrative dashboard provided by WordPress to access the theme upload functionality. Once uploaded, We carefully configured the theme settings, ensuring its seamless integration with the website's content and functionality.</li>
+                      </ul> 
+                      -->
+                      <div class="workContainer" style="margin-top: 50px">
+                          <p class="workName">Luxury Presence</p>
+                          <p class="workYear">March 2021 - January 2023</p>
+                      </div>
+                      <p class="workTitle">Senior Website Builder</p>
+                      <p class="workText">The Senior Website Builder, my role in my previous company, encompasses a range of responsibilities aimed at ensuring the smooth and efficient operation of websites. I utilize my expertise to carefully edit website content, ensuring its accuracy, engagement, and optimization for search engines. Through skillful customization of layouts, graphics, and typography, I strive to create visually impressive and user-friendly websites that leave a lasting impact on visitors. The responsibilities are vast but not limited to:</p><br>
+
+                      <ul class="workList">
+                          <li class="workInfo">In addition I actively collaborate with Data Specialists, working closely with them to implement their tasks seamlessly. This collaborative effort allows us to integrate various data-driven features and functionalities into websites, such as dynamic content, personalized user experiences, and advanced analytics. By leveraging these data-driven insights, I contribute to enhancing the overall performance and effectiveness of the websites we build.</li>
+                          <br>
+                          <li class="workInfo">While I excel at implementing client requests with precision and attention to detail, I also embrace an innovative mindset. In my role as a Senior Website Builder, I constantly seek out opportunities to push the boundaries of creativity and functionality. Whether it's designing unique interactive elements, developing custom features, or exploring emerging technologies, I strive to bring fresh ideas to the table and deliver exceptional websites that exceed client expectations.</li>
+                          <br>
+                          <li class="workInfo">I understand the importance of maintaining productivity and ensuring efficient use of time during work hours. <strong>Time Doctor 2</strong> is a valuable tool that aids in monitoring and managing time effectively. By using Time Doctor 2, my team and I are able to track and analyze our work activities, enabling us to optimize our workflow and enhance overall productivity.</li>
+                          <br>
+                          <li class="workInfo">Effective communication and collaboration are vital components of my role. <strong>Slack</strong> is a powerful tool that my team and I utilize to facilitate seamless communication, streamline workflows, and enhance productivity throughout our projects. One of the key advantages of Slack is its ability to organize conversations into specific channels based on projects, teams, or topics. This structure helps to keep discussions focused and easily accessible, ensuring that relevant information is readily available to the right individuals. By utilizing dedicated channels for specific projects or departments, we can minimize confusion, enhance transparency, and ensure that everyone involved has access to the necessary information.</li>
+                          <br>
+                          <li class="workInfo">Project management plays a crucial role in successfully delivering high-quality websites. <strong>Asana</strong> is a powerful project management tool that my team and I utilize to plan, organize, and track our projects effectively. Asana provides a centralized platform where we can create and manage projects, assign tasks, set deadlines, and track progress. By utilizing Asana, we can establish clear project structures, define milestones, and allocate responsibilities to team members. This helps to ensure that everyone is aligned on project objectives, timelines, and deliverables right from the start. We used Asana when I started in Luxury Presence but we transfer to Salesforce afterward.</li>
+                          <br>
+                          <li class="workInfo"><strong>Salesforce</strong> serves as a powerful CRM platform that we utilize as Senior Website Builders to streamline our sales processes, manage customer interactions, and ensure client satisfaction. By leveraging Salesforce's features and capabilities, we can effectively manage client relationships, automate routine tasks, gain valuable insights, and deliver exceptional website solutions to our clients.</li>
+                          <br>
+                          <li class="workInfo">We rely on various <strong>Google tools</strong> to facilitate communication, collaboration, and organization. From conducting meetings with Google Meet, scheduling appointments with Google Calendar, sharing files through Google Drive, and leveraging other Google productivity tools, we ensure efficient teamwork and successful project outcomes. These tools allow us to streamline our processes, enhance productivity, and deliver high-quality websites to our clients.</li>
+                          <br>
+                          <li class="workInfo"><strong>Coda.io</strong> serves as a valuable tool for sharing thoughts, facilitating discussions, and voting on opinions during meetings as Senior Website Builders. By leveraging its collaborative features and interactive capabilities, we can ensure that meetings are productive, inclusive, and that decisions are made collectively. Coda.io helps us capture and organize meeting-related information, improving collaboration and ensuring that projects progress efficiently.</li>
+                          <br>
+                          <li class="workInfo">We used a <strong>platform similar to WordPress</strong>, it serves as a reliable and user-friendly CMS for building and managing websites. It offers customization options, plugin support, and a content management system that enables us to efficiently create and maintain high-quality websites for our clients. By leveraging this platform's features and capabilities, we can deliver websites that meet our clients' expectations while streamlining our website development process.</li>
+                      </ul> 
+                  </div>
+              </div>
+          </div>
+      </div>
+      <a href="#My-About" class="dark-icon btn OAbutton">
+          <img class="icon" src="Images/up.png" alt="">
+      </a>
+  </div>
+</div>
+
+<!-- MORE ABOUT ME POP-UP END -->
+
+              <!--SLIDER START-->
               <div class="wrapper hidden-left show">
                 <i id="left" class="fa-solid fa-angle-left"></i>
                 <div class="carousel">
@@ -78,7 +247,7 @@
                 </div>
                 <i id="right" class="fa-solid fa-angle-right"></i>
               </div>              
-              <!--SLIDER-->            
+              <!--SLIDER END-->            
             </div>
           </div>
         </section>
@@ -123,7 +292,7 @@
                   </header>
                   <div class="col-2-span-1 exp-col-1">
                     <p class="mb-4">
-                    Hired as an intern by the <a href="https://endsofttech.com/">Endsofttech Web Solutions</a> as a Technical Support intern. As the day goes by, started learning Wordpress Website Development and become a QA intern 1 month after hired through my skills and through the help and referral 
+                    Hired by the company <a href="https://endsofttech.com/">Endsofttech Web Solutions</a> as a Technical Support intern. Later on, started learning Wordpress Website Development and become a QA intern 1 month after hired through my skills and through the help and referral 
                     of WP Developer Interns and the best supervisor of all, Mr.<a href="https://www.linkedin.com/in/jorsenmejia/"> Jorsen Mejia</a>. Finished my 720 hours internship as a QA intern for the company QA-ing beautiful websites created
                     by the employee of the company. 
                     </p>
@@ -146,11 +315,14 @@
 
                   </div>
                   <header class="col-1-span-1 exp-col-txt exp-col-2">
-                    05/2023 - Present
+                    06/2016 - Present
+                    <h4 class="exp-title">
+                      Personal Experience
+                    </h4>
                   </header>
                   <div class="col-2-span-1 exp-col-1">
                     <p class="mb-4">
-                    Developing a newer version of my long deleted Portfolio Website.
+                    Front-end fundamentals ready, can build front-end websites using Photoshop, Figma, Wordpress and Webflow.
                     </p>
                     <ul class="flex-wrap">
                       <li class="float-ovals">JavaScript</li>
@@ -159,8 +331,11 @@
                       <li class="float-ovals">JQuery</li>
                       <li class="float-ovals">Github</li>
                       <li class="float-ovals">Git</li>
-                      <li class="float-ovals">Tawk.to</li>
-                      <li class="float-ovals">Database</li>
+                      <li class="float-ovals">Figma</li>
+                      <li class="float-ovals">Photoshop</li>
+                      <li class="float-ovals">Wordpress</li>
+                      <li class="float-ovals">Webflow</li>
+                      <li class="float-ovals">Xampp</li>
                     </ul>
                   </div>
                 </div>
@@ -171,6 +346,23 @@
         <section id="projects">
           <div class="container-projects">
             <ol>
+              <li class="mb-12">
+                <a class="link-noline" href="index.html"></a>
+                <div class="project-container hidden-left show">
+                  <div>
+
+                  </div>
+                  <header class="col-1-span-1 exp-col-txt project-col-2">
+                    <img class="project-img" src="Images/Projects/preview.jpg"><!--PLACE YOUR IMAGE HERE-->
+                  </header>
+                  <div class="col-2-span-1 project-col-1">
+                    <p class="mb-4">
+                      My own portfolio website, published using Github and powedred by JavaScript.
+                    </p>
+                    <img class="mobile-icon" src="Images/Global/newtab.png">
+                  </div>
+                </div>
+              </li>
               <li class="mb-12">
                 <a class="link-noline" href="random-quote-generator.html">
                 <div class="project-container hidden-left show">
@@ -206,22 +398,6 @@
                   </div>
                 </div>
               </a>
-              </li>
-              <li class="mb-12">
-                <div class="project-container hidden-left show">
-                  <div>
-
-                  </div>
-                  <header class="col-1-span-1 exp-col-txt project-col-2">
-                    <img class="project-img" src="Images/Projects/preview.jpg"><!--PLACE YOUR IMAGE HERE-->
-                  </header>
-                  <div class="col-2-span-1 project-col-1">
-                    <p class="mb-4">
-                      Upcoming Laravel Project...
-                    </p>
-                    <img class="mobile-icon" src="Images/Global/newtab.png">
-                  </div>
-                </div>
               </li>
             </ol>
           </div>
