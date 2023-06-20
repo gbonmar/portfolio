@@ -161,11 +161,46 @@ window.addEventListener('scroll', function() {
   }
 });
 
+
 // Image slider - Start
 
 const carousel = document.querySelector(".carousel"),
 firstImg = carousel.querySelectorAll("img")[0],
 arrowIcons = document.querySelectorAll(".wrapper i");
+const carouselItems = document.querySelectorAll('.carousel');
+const zoomOverlay = document.querySelector('.zoom-overlay');
+const zoomedImage = document.querySelector('.zoom-overlay img');
+
+let currentIndex = 0; // Track the current index of the carousel item
+
+// Attach click event to each carousel item
+carouselItems.forEach((item, index) => {
+  item.addEventListener('click', function () {
+    // Get the image source of the clicked item
+    const imageSrc = this.querySelector('img').src;
+
+    // Set the image source for the zoomed image
+    zoomedImage.src = imageSrc;
+
+    // Update the current index
+    currentIndex = index;
+
+    // Show the zoom overlay
+    zoomOverlay.style.display = 'block';
+  });
+});
+
+// Close button functionality
+$(".close-button").on("click", function() {
+  $(".zoom-overlay").hide();
+});
+
+// Hide the zoom overlay when clicked outside the zoomed image
+zoomOverlay.addEventListener('click', function (event) {
+  if (event.target === this) {
+    this.style.display = 'none';
+  }
+});
 
 let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
 
@@ -175,7 +210,6 @@ const showHideIcons = () => {
     arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" : "block";
     arrowIcons[1].style.display = carousel.scrollLeft == scrollWidth ? "none" : "block";
 }
-
 arrowIcons.forEach(icon => {
     icon.addEventListener("click", () => {
         let firstImgWidth = firstImg.clientWidth + 14; // getting first img width & adding 14 margin value
@@ -239,6 +273,7 @@ carousel.addEventListener("touchend", dragStop);
 
 
 // Image slider - End
+
 
 
 // Soft ID scroll - Start
