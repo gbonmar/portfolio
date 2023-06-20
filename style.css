@@ -498,7 +498,7 @@ h1, h2, h3, h4, h5 {
 }
 .title {
   font-size: 2rem;
-  color: #fff;
+  color: #b0b1b3;
 }
 .close-button {
   /* Your close button styles */
@@ -515,10 +515,10 @@ h1, h2, h3, h4, h5 {
 
 /* Animated Overlay start */
 .myAOContainer{
-  color: #fff;
+  color: #b0b1b3;
 }
 .myAOContainer2{
-  color: #fff;
+  color: #b0b1b3;
 }
 .mobile-icon{
   width: 20px;
@@ -658,19 +658,9 @@ h1, h2, h3, h4, h5 {
     border-radius: 20px;
     color: #b0b1b3;
   }
-  .myAOEducational .lottie,.myAOSeminar .lottie{
-    height:350px;
-    filter:grayscale(1);
-    margin-bottom:50px;
-    margin-top:50px
-  }
 @media(max-width: 768px){
   .myAOEducational,.myAOSeminar{
     padding:50px 30px
-  }
-  .myAOEducational .lottie,.myAOSeminar .lottie{
-    margin-bottom:0px;
-    margin-top:0px
   }
 }
 .myEducTextContainer{
@@ -746,6 +736,9 @@ h1, h2, h3, h4, h5 {
   width:100%;
   max-width:1390px;
   margin:85px auto 0;
+  padding: 3rem 0;
+  background-color: #91886828;
+  border-radius: 20px;
 }
 .myAOContainer2 .myAOWorkExperience{
   display:flex;
@@ -768,18 +761,25 @@ h1, h2, h3, h4, h5 {
   font-size:20px;
   margin-bottom:20px;
   margin-top:2px;
+  font-family: 'Roboto', sans-serif;
 }
 .myAOContainer2 .workYear{
   font-size:16px;
   text-transform:uppercase;
-  background-color:#000;
-  color:#fff;
-  border-radius:3px;
+  color: #918868;
+  background-color: #91886862;
+  border-radius:20px;
   width:100%;
   max-width:225px;
   display:flex;
   align-items:center;
   justify-content:center;
+  text-align: center;
+  font-weight: 600;
+}
+.myAOContainer2 .myAOWorkTextContainer:hover .workYear{
+  background-color: #918868;
+  color: #fff;
 }
 @media(max-width: 768px){
   .myAOContainer2 .workYear{
