@@ -566,7 +566,7 @@ h1, h2, h3, h4, h5 {
 #overlayBackground .overlayCloseButton:hover img{
   filter:invert(0.5);
 }
-@media(max-width: 768px){
+@media only screen and (max-width: 768px){
   #overlayBackground .overlayCloseButton{
     top:30px;
     right:30px;
@@ -612,7 +612,7 @@ h1, h2, h3, h4, h5 {
         color: #b0b1b3;
         border-radius: 20px;
       }
-@media(max-width: 1024px){
+@media only screen and(max-width: 1024px){
   #overlayBackground .myAboutOverlay .aboutOverContainer{
     flex-direction:column-reverse;
   }
@@ -622,6 +622,12 @@ h1, h2, h3, h4, h5 {
   max-width:500px;
   height:auto;
   border-radius: 20px;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 1024px) and (max-width: 1500px){
+  #overlayBackground .myAboutOverlay .myAOImg{
+    max-width:300px;
+  }
 }
 #overlayBackground .myAboutOverlay .myAOContainer{
   display: flex;
@@ -630,12 +636,12 @@ h1, h2, h3, h4, h5 {
   width:90%;
   margin:0 auto;
 }
-@media(max-width: 1460px){
+@media only screen and(max-width: 1460px){
   #overlayBackground .myAboutOverlay .myAOContainer{
-    flex-direction:column
+    flex-direction:column;
   }
 }
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 1366px){
   .myAOEducational{
     margin-left: 10px;
   }
@@ -643,9 +649,20 @@ h1, h2, h3, h4, h5 {
     margin-right: 10px;
   }
 }
-@media(max-width: 768px){
+@media only screen and (min-width: 769px) and (max-width: 1366px){
+  .myAOEducational{
+    margin-left: 10px;
+  }
+}
+@media only screen and (min-width: 320px){
+  .myAOEducational{
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 768px){
   #overlayBackground .myAboutOverlay{
-    padding:100px 25px 150px
+    padding:100px 25px 150px;
+    margin-top: 150px;
   }
   #overlayBackground .myAboutOverlay .myAOTitle{
     font-size:40px;
@@ -669,19 +686,20 @@ h1, h2, h3, h4, h5 {
     border-radius: 20px;
     color: #b0b1b3;
   }
-@media(max-width: 768px){
+@media only screen and (max-width: 768px){
   .myAOEducational,.myAOSeminar{
-    padding:50px 30px
+    padding:50px 30px;
   }
 }
 .myEducTextContainer{
   text-align:left;
   position:relative;
-  width:100%
+  width:100%;
+  padding: 3rem;
 }
-@media(max-width: 768px){
+@media only screen and (max-width: 768px){
   .myEducTextContainer{
-    text-align:center
+    text-align:center;
   }
 }
 .textContainer{
@@ -689,23 +707,23 @@ h1, h2, h3, h4, h5 {
   display:flex;
   justify-content:space-between;
   flex-wrap:wrap;
-  margin:20px auto
+  margin:20px auto;
 }
-@media(max-width: 768px){
+@media only screen and (max-width: 768px){
   .textContainer{
     justify-content:center;
     flex-direction:column;
-    margin:20px auto 0px
+    margin:20px auto 0px;
   }
 }
 .educationText{
   font-size:15px;
-  margin-top:10px
+  margin-top:10px;
 }
-@media(max-width: 768px){
+@media only screen and (max-width: 768px){
   .educationText{
     margin-top:5px;
-    margin-bottom:50px
+    margin-bottom:50px;
   }
 }
 .educationYear{
@@ -727,12 +745,12 @@ h1, h2, h3, h4, h5 {
   background-color: #918868;
   color: #fff;
 }
-@media(max-width: 768px){
+@media only screen and (max-width: 768px){
   .educationYear{
     margin:0 auto;
     max-width:200px;
     margin-top:5px;
-    padding:10px
+    padding:10px;
   }
 }
 .educationTitle,.workName{
@@ -746,7 +764,7 @@ h1, h2, h3, h4, h5 {
   flex-direction:column;
   width:100%;
   max-width:1390px;
-  margin:85px auto 0;
+  margin: 20px auto 0;
   padding: 3rem 0;
   background-color: #91886828;
   border-radius: 20px;
@@ -757,7 +775,7 @@ h1, h2, h3, h4, h5 {
   align-items:center;
   flex-direction:column;
   width:100%;
-  max-width:1300px
+  max-width:1300px;
 }
 .myAOContainer2 .myAOWorkExperience .myAOWorkTextContainer{
   width:100%
@@ -766,7 +784,7 @@ h1, h2, h3, h4, h5 {
   width:100%;
   max-width:600px;
   filter:grayscale(1);
-  margin:-10px 50px
+  margin:-10px 50px;
 }
 .myAOContainer2 .workTitle{
   font-size:20px;
@@ -792,32 +810,32 @@ h1, h2, h3, h4, h5 {
   background-color: #918868;
   color: #fff;
 }
-@media(max-width: 768px){
+@media only screen and (max-width: 768px){
   .myAOContainer2 .workYear{
     padding:10px;
-    margin:5px 0
+    margin:5px 0;
   }
 }
 .workContainer{
   width:100%;
   display:flex;
   justify-content:space-between;
-  margin-top:20px
+  margin-top:20px;
 }
-@media(max-width: 768px){
+@media only screen and (max-width: 768px){
   .workContainer{
-    flex-direction:column
+    flex-direction:column;
   }
 }
 .workText{
   font-size:17px
 }
-@media(max-width: 768px){
+@media only screen and (max-width: 768px){
   .workText{
-    text-align:left
+    text-align:left;
   }
 }
-@media(max-width: 768px){
+@media only screen and (max-width: 768px){
   .workName,.workTitle{
     text-align:left;
   }
@@ -829,23 +847,23 @@ h1, h2, h3, h4, h5 {
   font-size:17px;
   margin-left:50px;
 }
-@media(max-width: 768px){
+@media only screen and (max-width: 768px){
   .workList{
     text-align:left;
-    margin-left:35px
+    margin-left:35px;
   }
 }
 .OAbutton{
   position:absolute;
   bottom:50px;
   right:50px;
-  padding-bottom:18px
+  padding-bottom:18px;
 }
-@media(max-width: 768px){
+@media only screen and (max-width: 768px){
   .OAbutton{
     bottom:30px;
     right:30px;
-    padding-bottom:10px
+    padding-bottom:10px;
   }
 }
 #overlayProject01,#overlayProject02,#overlayProject03{
@@ -858,7 +876,7 @@ h1, h2, h3, h4, h5 {
   overflow-x:hidden;
   height:0%;
   transition:.5s;
-  scroll-behavior:smooth
+  scroll-behavior:smooth;
 }
 #overlayProject01 .overlayCloseButton,#overlayProject02 .overlayCloseButton,#overlayProject03 .overlayCloseButton{
   position:absolute;
@@ -869,27 +887,28 @@ h1, h2, h3, h4, h5 {
 #overlayProject01 .overlayCloseButton img,#overlayProject02 .overlayCloseButton img,#overlayProject03 .overlayCloseButton img{
   width:35px;
   height:35px;
-  transition:.3s
+  transition:.3s;
 }
 #overlayProject01 .overlayCloseButton:hover img,#overlayProject02 .overlayCloseButton:hover img,#overlayProject03 .overlayCloseButton:hover img{
   filter:invert(0.5);
 }
-@media(max-width: 768px){
+@media only screen and (max-width: 768px){
   #overlayProject01 .overlayCloseButton,#overlayProject02 .overlayCloseButton,#overlayProject03 .overlayCloseButton{
     top:30px;
-    right:30px
+    right:30px;
   }
   #overlayProject01 .overlayCloseButton img,#overlayProject02 .overlayCloseButton img,#overlayProject03 .overlayCloseButton img{
     width:25px;
-    height:25px
+    height:25px;
   }
 }
 
-@media(max-width: 768px){
+@media only screen and (max-width: 768px){
   .btn{
     padding:10px 20px;
-    font-size:11px}
-  } 
+    font-size:11px;
+  }
+} 
 /*end*/
 /*RESPONSIVE*/
 @media only screen and (min-width: 1024px) {
@@ -897,17 +916,6 @@ h1, h2, h3, h4, h5 {
     display: none;
   }
 }
-@media screen and (max-width: 900px) {
-  .carousel img{
-    width: calc(100% / 2);
-  }
-}
-@media screen and (max-width: 550px) {
-  .carousel img{
-    width: 100%;
-  }
-}
-
 /* Media queries for 1367 below screen */
 @media only screen and (max-width: 1366px) {
   .nav-items {
@@ -930,7 +938,7 @@ h1, h2, h3, h4, h5 {
     font-size: 30px;
   }
   .content-about {
-    width: 65%;
+    width: 100%;
     margin-bottom: 20px;
   }
   .logo {
@@ -1247,7 +1255,6 @@ h1, h2, h3, h4, h5 {
     padding: 2% 2% 0 2%;
     background-color: #91886828;
   }
-
   .container-experiences {
     padding: 20px 20px 0 20px;
     height: 100%;
@@ -1303,9 +1310,11 @@ h1, h2, h3, h4, h5 {
   .exp-title {
     margin-bottom: 10px;
   }
+  /*
   .btn {
     display: none;
   }
+  */
   body{
     overflow: auto;
     margin: 0;
