@@ -135,6 +135,9 @@ section {
   background-color: #91886828;
   border-radius: 20px;
 }
+.element-col-3{
+  padding-bottom: 3rem;
+}
 /* end */
 /* Random Quote Generator start */
 .container-projects {
