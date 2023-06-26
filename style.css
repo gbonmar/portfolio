@@ -470,8 +470,19 @@ h1, h2, h3, h4, h5 {
   height: 340px;
   object-fit: cover;
   user-select: none;
+}
+.carousel {
+  display: flex;
+  overflow: auto;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.carousel-inner {
+  display: flex;
   margin-left: 14px;
-  width: 100%;
+}
+.carousel-inner:first-child{
+  margin-left: 0;
 }
 .carousel img:first-child{
   margin-left: 0px;
@@ -540,9 +551,6 @@ h1, h2, h3, h4, h5 {
   height:0%;
   transition:.5s;
   scroll-behavior:smooth;
-  @media only screen and (max-width: 768px) {
-    margin-top: 150px;
-  }
 }
 #overlayBackground .overlayCloseButton{
   position:absolute;
